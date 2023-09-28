@@ -130,7 +130,7 @@ body {
     grid-template-columns: repeat(4, minmax(101px, 60px));
     grid-template-rows: repeat(5, 64px);
     justify-content: space-between;
-    row-gap: 32px;
+    align-content: space-between;
     margin-top: 24px;
     padding: 32px 30px;
     border-radius: 10px;
