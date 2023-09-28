@@ -1,0 +1,406 @@
+/* **************** GENERAL CSS (START) **************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    transition: all 0.2s;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.attribution {
+    margin-top: 20px;
+}
+
+.attribution a{
+    font-size: 11px;
+}
+/* **************** GENERAL CSS (END) **************** */
+
+
+/* **************** CONTAINER CSS (START) **************** */
+.container {
+    width: 540px;
+}
+/* **************** CONTAINER CSS (END) **************** */
+
+
+/* **************** CALC HEADER CSS (START) **************** */
+.container .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .header .logo {
+    font-size: 32px;
+    letter-spacing: -0.53px;
+    font-weight: bold;
+}
+
+.container .header .theme-div {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.container .header .theme-div > span {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container .header .theme-div .toggle-switch {
+    position: relative;
+    width: 72px;
+    height: 26px;
+    border-radius: 13px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container .header .theme-div .toggle-switch > .labels {
+    width: calc(100% - 8px);
+    height: 200%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -26px;
+
+}
+
+.container .header .theme-div .toggle-switch > .labels span {
+    font-size: 12px;
+    font-weight: bold;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.container .header .theme-div .toggle-switch::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: all 0.2s;
+    left: 4px;
+}
+
+.container .header .theme-div .toggle-switch.t-1::before {
+    left: 4px;
+}
+
+.container .header .theme-div .toggle-switch.t-2::before {
+    left: calc(50% - 8px);
+}
+
+.container .header .theme-div .toggle-switch.t-3::before {
+    left: calc(100% - 16px - 4px);
+}
+/* **************** CALC HEADER CSS (END) **************** */
+
+
+/* **************** CALC SCREEN CSS (START) **************** */
+.container .screen {
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 56px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: flex-end;
+}
+/* **************** CALC SCREEN CSS (END) **************** */
+
+
+/* **************** CALC KEYS CSS (START) **************** */
+.container .keys {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(101px, 60px));
+    grid-template-rows: repeat(5, 64px);
+    justify-content: space-between;
+    row-gap: 32px;
+    margin-top: 24px;
+    padding: 32px 30px;
+    border-radius: 10px;
+}
+
+.container .keys .key {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -0.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.container .keys .key.col-span-2 {
+    grid-column: 2 span;
+}
+
+.container .keys .key.reset {
+    font-size: 28px;
+    letter-spacing: -0.47px;
+}
+
+.container .keys .key.equal {
+    font-size: 28px;
+    letter-spacing: -0.47px;
+}
+/* **************** CALC KEYS CSS (END) **************** */
+
+/* **************** THEME 1 CSS (START) **************** */
+body.theme-1 {
+    background-color: #3A4663;
+}
+
+body.theme-1 .attribution {
+    color: white;
+}
+
+body.theme-1 .attribution a {
+    color: white;
+}
+
+body.theme-1 .container .header .logo {
+    color: white;
+}
+
+body.theme-1 .container .header .theme-div > span {
+    color: white;
+}
+
+body.theme-1 .container .header .theme-div .toggle-switch {
+    background-color: #242D44;
+}
+
+body.theme-1 .container .header .theme-div .toggle-switch > .labels span {
+    color: white;
+}
+
+body.theme-1 .container .header .theme-div .toggle-switch::before {
+    background-color: #D03F2F;
+}
+
+body.theme-1 .container .header .theme-div .toggle-switch:hover::before {
+    background-color: #F96B5B;
+}
+
+body.theme-1 .container .screen {
+    color: white;
+    background-color: #181F33;
+}
+
+body.theme-1 .container .keys {
+    background-color: #242D44;
+}
+
+body.theme-1 .container .keys .key {
+    background-color: #EAE3DC;
+    box-shadow: inset 0 -4px 0 0 #B3A497;
+    color: #434A59;
+}
+
+body.theme-1 .container .keys .key:hover {
+    background-color: #FFFFFE;
+}
+
+body.theme-1 .container .keys .key.reset {
+    background-color: #647198;
+    box-shadow: inset 0 -4px 0 0 #414E73;
+    color: white;
+}
+
+body.theme-1 .container .keys .key.reset:hover {
+    background-color: #A2B2E1;
+}
+
+body.theme-1 .container .keys .key.equal {
+    background-color: #D03F2F;
+    box-shadow: inset 0 -4px 0 0 #93261A;
+    color: white;
+}
+
+body.theme-1 .container .keys .key.equal:hover {
+    background-color: #F96B5B;
+}
+/* **************** THEME 1 CSS (END) **************** */
+
+
+/* **************** THEME 2 CSS (START) **************** */
+body.theme-2 {
+    background-color: #E6E6E6;
+}
+
+body.theme-2 .attribution {
+    color: #378187;
+}
+
+body.theme-2 .attribution a {
+    color: #378187;
+}
+
+body.theme-2 .container .header .logo {
+    color: #36362C;
+}
+
+body.theme-2 .container .header .theme-div > span {
+    color: #36362C;
+}
+
+body.theme-2 .container .header .theme-div .toggle-switch {
+    background-color: #D2CDCD;
+}
+
+body.theme-2 .container .header .theme-div .toggle-switch > .labels span {
+    color: #36362C;
+}
+
+body.theme-2 .container .header .theme-div .toggle-switch::before {
+    background-color: #C85402;
+}
+
+body.theme-2 .container .header .theme-div .toggle-switch:hover::before {
+    background-color: #FF8A38;
+}
+
+body.theme-2 .container .screen {
+    color: #36362C;
+    background-color: #EEEEEE;
+}
+
+body.theme-2 .container .keys {
+    background-color: #D2CDCD;
+}
+
+body.theme-2 .container .keys .key {
+    background-color: #E5E4E1;
+    box-shadow: inset 0 -4px 0 0 #A79E91;
+    color: #36362C;
+}
+
+body.theme-2 .container .keys .key:hover {
+    background-color: #FFFFFE;
+}
+
+body.theme-2 .container .keys .key.reset {
+    background-color: #378187;
+    box-shadow: inset 0 -4px 0 0 #1B6066;
+    color: white;
+}
+
+body.theme-2 .container .keys .key.reset:hover {
+    background-color: #62B5BC;
+}
+
+body.theme-2 .container .keys .key.equal {
+    background-color: #C85402;
+    box-shadow: inset 0 -4px 0 0 #873901;
+    color: white;
+}
+
+body.theme-2 .container .keys .key.equal:hover {
+    background-color: #FF8A38;
+}
+/* **************** THEME 2 CSS (END) **************** */
+
+
+/* **************** THEME 3 CSS (START) **************** */
+body.theme-3 {
+    background-color: #17062A;
+}
+
+body.theme-3 .attribution {
+    color: #00DED0;
+}
+
+body.theme-3 .attribution a {
+    color: #00DED0;
+}
+
+body.theme-3 .container .header .logo {
+    color: #FFE53D;
+}
+
+body.theme-3 .container .header .theme-div > span {
+    color: #FFE53D;
+}
+
+body.theme-3 .container .header .theme-div .toggle-switch {
+    background-color: #1E0936;
+}
+
+body.theme-3 .container .header .theme-div .toggle-switch > .labels span {
+    color: #FFE53D;
+}
+
+body.theme-3 .container .header .theme-div .toggle-switch::before {
+    background-color: #00DED0;
+}
+
+body.theme-3 .container .header .theme-div .toggle-switch:hover::before {
+    background-color: #93FFF8;
+}
+
+body.theme-3 .container .screen {
+    color: #FFE53D;
+    background-color: #1E0936;
+}
+
+body.theme-3 .container .keys {
+    background-color: #1E0936;
+}
+
+body.theme-3 .container .keys .key {
+    background-color: #331C4D;
+    box-shadow: inset 0 -4px 0 0 #881C9E;
+    color: #FFE53D;
+}
+
+body.theme-3 .container .keys .key:hover {
+    background-color: #8631AF;
+    box-shadow: inset 0 -4px 0 0 #BE15F4;
+}
+
+body.theme-3 .container .keys .key.reset {
+    background-color: #56077C;
+    box-shadow: inset 0 -4px 0 0 #BE15F4;
+    color: white;
+}
+
+body.theme-3 .container .keys .key.reset:hover {
+    background-color: #8631AF;
+    box-shadow: inset 0 -4px 0 0 #BE15F4;
+}
+
+body.theme-3 .container .keys .key.equal {
+    background-color: #00DED0;
+    box-shadow: inset 0 -4px 0 0 #6CF9F1;
+    color: #1A2327;
+}
+
+body.theme-3 .container .keys .key.equal:hover {
+    background-color: #93FFF8;
+}
+/* **************** THEME 3 CSS (END) **************** */
