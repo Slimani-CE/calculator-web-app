@@ -111,7 +111,6 @@ body {
 /* **************** CALC SCREEN CSS (START) **************** */
 .container .screen {
     width: 100%;
-    height: 480px;
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -126,6 +125,7 @@ body {
 /* **************** CALC KEYS CSS (START) **************** */
 .container .keys {
     width: 100%;
+    height: 480px;
     display: grid;
     grid-template-columns: repeat(4, minmax(101px, 60px));
     grid-template-rows: repeat(5, 64px);
