@@ -7,23 +7,17 @@
     font-weight: bold;
     font-size: 32px;
     transition: all 0.2s;
+    user-select: none;
 }
 
 body {
     width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px;
-}
-
-.attribution {
-    margin-top: 20px;
-}
-
-.attribution a{
-    font-size: 11px;
+    /* padding: 40px; */
 }
 /* **************** GENERAL CSS (END) **************** */
 
@@ -175,14 +169,6 @@ body.theme-1 {
     background-color: #3A4663;
 }
 
-body.theme-1 .attribution {
-    color: white;
-}
-
-body.theme-1 .attribution a {
-    color: white;
-}
-
 body.theme-1 .container .header .logo {
     color: white;
 }
@@ -253,14 +239,6 @@ body.theme-2 {
     background-color: #E6E6E6;
 }
 
-body.theme-2 .attribution {
-    color: #378187;
-}
-
-body.theme-2 .attribution a {
-    color: #378187;
-}
-
 body.theme-2 .container .header .logo {
     color: #36362C;
 }
@@ -329,14 +307,6 @@ body.theme-2 .container .keys .key.equal:hover {
 /* **************** THEME 3 CSS (START) **************** */
 body.theme-3 {
     background-color: #17062A;
-}
-
-body.theme-3 .attribution {
-    color: #00DED0;
-}
-
-body.theme-3 .attribution a {
-    color: #00DED0;
 }
 
 body.theme-3 .container .header .logo {
